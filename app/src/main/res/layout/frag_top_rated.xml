@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/colorSecondary"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/Frame1"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_search">
+
+        <Button
+            android:id="@+id/Btn_Search_TopRated"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_oval"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progress_circular_TopRated"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/MainColor" />
+
+    <RelativeLayout
+        android:id="@+id/layout_TopRated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Title_TopRated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/second_font"
+            android:gravity="center"
+            android:text="Top Rated Movies"
+            android:textColor="@color/MainColor"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV_TopRated_Pages"
+        android:layout_width="match_parent"
+        android:layoutDirection="rtl"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_TopRated"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        tools:listitem="@layout/item_page_number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RV_TopRated_Pages"
+        android:orientation="vertical">
+
+        <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView
+            android:id="@+id/RV_TopRated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_TopRated"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+        <TextView
+            android:id="@+id/ShowMore_Btn_TopRated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RV_TopRated"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:gravity="end"
+            android:text="More"
+            android:textColor="@color/MainColor"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

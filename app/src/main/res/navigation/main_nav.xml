@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/home_Frag">
+
+    <fragment
+        android:id="@+id/home_Frag"
+        android:name="com.dal4.ForceMovie.Fragments.Home_Frag"
+        android:label="Home_Frag" />
+    <fragment
+        android:id="@+id/profile_Frag"
+        android:name="com.dal4.ForceMovie.Fragments.Profile_Frag"
+        android:label="Profile_Frag" />
+    <fragment
+        android:id="@+id/search_Frag"
+        android:name="com.dal4.ForceMovie.Fragments.Search_Frag"
+        android:label="Search_Frag" />
+</navigation>
