@@ -8,10 +8,10 @@ Java
 RESTful API(Retrofit)
 design pattern mvp
 
-![Screenshot_20210418-170842_Force Movie](https://user-images.githubusercontent.com/72823171/155828660-55d7997e-daf0-4e4f-bbd1-a3c839deed7f.jpg | width=100) 
-![Screenshot_20210418-170910_Force Movie](https://user-images.githubusercontent.com/72823171/155828663-cd0e6031-9da4-45d1-ba08-c82c8b203d44.jpg =250x250)
-![Screenshot_20210418-172002_Force Movie](https://user-images.githubusercontent.com/72823171/155828664-aa0ed8f9-50be-423e-a09c-77da01e3725f.jpg =250x250)
-![Screenshot_20210418-175822_Force Movie](https://user-images.githubusercontent.com/72823171/155828665-e21414b3-5114-4779-b92d-aa6891580d00.jpg =250x250)
-![Screenshot_20210418-170821_Force Movie](https://user-images.githubusercontent.com/72823171/155828653-42a714b8-9db4-4e48-8797-997f305d1512.jpg =250x250)
+![Screenshot_Force Movie](https://user-images.githubusercontent.com/72823171/155828660-55d7997e-daf0-4e4f-bbd1-a3c839deed7f.jpg | width=100) 
+![Screenshot_Force Movie](https://user-images.githubusercontent.com/72823171/155828663-cd0e6031-9da4-45d1-ba08-c82c8b203d44.jpg =250x250)
+![Screenshot_Movie](https://user-images.githubusercontent.com/72823171/155828664-aa0ed8f9-50be-423e-a09c-77da01e3725f.jpg =250x250)
+![Screenshot_Force Movie](https://user-images.githubusercontent.com/72823171/155828665-e21414b3-5114-4779-b92d-aa6891580d00.jpg =250x250)
+![Screenshot_Force Movie](https://user-images.githubusercontent.com/72823171/155828653-42a714b8-9db4-4e48-8797-997f305d1512.jpg =250x250)
 
 Used api https://developers.themoviedb.org/3/movies/get-movie-details
